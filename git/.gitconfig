@@ -1,0 +1,12 @@
+[core]
+	autocrlf = false
+	excludesfile = ~/ignore_global
+	preloadindex = true
+	editor = vim
+
+[alias]
+        graph = log --graph --branches --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
+        ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+        s = status
+        ck = cherry-pick
+	    c = checkout
