@@ -1,0 +1,19 @@
+FROM golang:1.13-ubuntu AS builder
+
+ENV CGO_ENABLED=0
+
+ADD . /go/app
+WORKDIR /go/app
+RUN apk --update add --no-cache git
+
+WORKDIR /go/app/cmd/server
+RUN go build -o ../../.build/app
+
+# --------------------
+# application binary
+FROM busybox
+
+WORKDIR /var/www/app
+COPY --from=builder /go/app/.build/app .
+COPY --from=builder /go/app/scripts/run_app.sh .
+ENTRYPOINT ["./run_app.sh"]
