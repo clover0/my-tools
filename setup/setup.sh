@@ -23,3 +23,6 @@ fisher add jethrokuan/z
 # Linux
 #Ubuntu
 sudp apt install git curl fish 
+
+# default shell
+chsh -s /usr/bin/fish
