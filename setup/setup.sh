@@ -19,3 +19,7 @@ rm -rf fonts/
 
 fisher add oh-my-fish/theme-agnoster
 fisher add jethrokuan/z
+
+# Linux
+#Ubuntu
+sudp apt install git curl fish 
