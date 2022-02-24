@@ -9,7 +9,7 @@ chsh -s /usr/local/bin/fish
 echo $SHELL
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
-fisher add edc/bass
+fisher install edc/bass
 
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
@@ -17,8 +17,8 @@ cd fonts
 cd ..
 rm -rf fonts/
 
-fisher add oh-my-fish/theme-agnoster
-fisher add jethrokuan/z
+fisher install oh-my-fish/theme-agnoster
+fisher install jethrokuan/z
 
 ####### Linux ########
 ### Ubuntu
