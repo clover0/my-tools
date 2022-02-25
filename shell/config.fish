@@ -1,4 +1,4 @@
-set PATH /usr/local/bin /usr/sbin  ~/.nodebrew/current/bin ~/tools/bin ~/Library/Python/3.7/bin/ $PATH
+set PATH ~/.nodebrew/current/bin ~/tools/bin ~/Library/Python/3.7/bin/ $PATH
 set PATH $PATH /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin
 set JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
 #rbenv
